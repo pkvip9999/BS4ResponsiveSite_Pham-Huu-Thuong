@@ -60,7 +60,7 @@ gulp.task('cache:clear', function (callback) {
 })
 gulp.task('build', function () {
     runSequence('clean:dist',
-        [ 'useref', 'images', 'fonts'],
+        ['sass', 'useref', 'images', 'fonts'],
     )
 })
 gulp.task('default', function (callback) {
